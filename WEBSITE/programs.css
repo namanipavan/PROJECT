@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root{
+    --primary-color: #d63033;
+    --secondary-color: #636e72;
+    --font:'Poppins', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+  background-color: black; 
+  font-family: var(--font);
+
+}
+
+nav{
+    position: fixed;
+    width:100vw;
+    height: 60px;
+    border-top: .5rem solid var(--primary-color);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index:999999;
+}
+.logo{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 25%;
+    font-weight: 700;
+    background: var(--primary-color);
+}
+
+.logo::before{
+    content: "TRANSFORM";
+    color: white;
+}
+.logo::after{
+    content:"YOURSELF";
+    color:black;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    margin: 0 2rem;
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-weight:700;
+    font-size: 16px;
+}
+ul li a{
+    list-style: none;
+
+}
+
+ul a:hover ul.dropdown{
+    color: var(--primary-color);
+}
+.banner{
+    background: url(./pic3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300vh;
+}
+.intro{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+ 
